@@ -492,7 +492,7 @@ footer {
 }
 
 .about-first {
-  background-image: url(/images/Rectangle 9.png);
+  background-image: url(/images/Rectangle9.png);
   height: 20rem;
   background-size: contain;
   object-fit: contain;
@@ -621,10 +621,10 @@ footer {
   letter-spacing: 0.0016em;
 }
 .top-how {
-  background-image: url(/images/Rectangle 93.png);
+  background-image: url(/images/Rectangle93.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: black;
+  /* background-color: black; */
   height: 20rem;
   /* top: 0; */
   padding-top: 0.5rem;
@@ -657,10 +657,10 @@ footer {
   margin-left: 4rem;
 }
 .contact-first {
-  background-image: url(/images/Rectangle 3.png);
+  background-image: url(/images/Rectangle3.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: black;
+  /* background-color: black; */
   height: 20rem;
   /* top: 0; */
   padding-top: 0.5rem;
