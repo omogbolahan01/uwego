@@ -1,0 +1,800 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  /* padding-block: 10px; */
+  background-color: #fafafa;
+}
+
+header a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 600;
+  padding: 3px 15px;
+}
+
+header a:hover {
+  color: #161616;
+  text-decoration: underline;
+}
+
+header button {
+  cursor: pointer;
+}
+
+header .home-logo {
+  height: 3.5rem;
+  width: 7rem;
+  margin-right: 2rem;
+}
+
+header .home-line {
+  height: 2rem;
+  width: 0.2rem;
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+}
+/* main {
+  margin-bottom: 84px;
+} */
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272832;
+  padding-left: 7rem;
+  /* padding-right: 10rem; */
+}
+.home-pagecontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.h-span {
+  text-decoration: underline;
+  text-decoration-color: #5a8fe5;
+}
+.area-1 h2 {
+  font-family: Product Sans;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 25px;
+  color: #ffffff;
+  /* letter-spacing: 0em; */
+  /* text-align: left; */
+}
+.hero--image img {
+  height: 100%;
+  object-fit: contain;
+}
+.area-1 p {
+  font-family: Manrope;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.0012em;
+  padding-right: 15rem;
+  color: #cacaca;
+}
+.app-store {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.download-line {
+  padding: 0 1rem;
+}
+.what-area {
+  justify-content: center;
+  align-items: center;
+}
+.what-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+.what-text h3 {
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #03015d;
+}
+.what-text p {
+  font-family: Manrope;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  color: #6f6f6f;
+}
+
+.what-flex {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-obj {
+  width: 20rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: #03015d05;
+  padding-top: 2rem;
+}
+.flex-obj img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.why-area {
+  justify-content: center;
+  align-items: center;
+}
+.why-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+.why-text h3 {
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-weight: 800;
+
+  color: #03015d;
+
+  letter-spacing: 0.0015em;
+  color: #03015d;
+}
+.why-text p {
+  font-family: Manrope;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  letter-spacing: 0em;
+  color: #6f6f6f;
+  padding: 1rem 28rem;
+}
+.why-flex {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.flex-why {
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+}
+.flex-why img {
+  object-fit: contain;
+  width: 6rem;
+  height: 5rem;
+}
+.how-area {
+  background-color: #03015d05;
+}
+.how-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+.how-text h3 {
+  font-family: Manrope;
+  font-size: 1.6rem;
+  font-weight: 800;
+
+  color: #03015d;
+}
+.how-text p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+
+  letter-spacing: 0em;
+  color: #6f6f6f;
+  padding-bottom: 2rem;
+}
+.how-flex {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+.flex-how {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.how-arrow {
+  width: 4rem;
+  height: 2rem;
+  object-fit: contain;
+  /* top: 8rem;
+  position: relative; */
+}
+.slider-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+.slider-text h3 {
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-weight: 800;
+
+  letter-spacing: 0em;
+  color: #03015d;
+}
+.slider-text p {
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  color: #6f6f6f;
+}
+.hero--image {
+  width: 100%;
+}
+.logo-class1 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.logo-class1 h3 {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 300;
+
+  color: #b4b4b4;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.logo-class12 h3 {
+  font-family: Manrope;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+
+  color: #b4b4b4;
+}
+.logo-class12 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.trust-area {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+.trust-area h2 {
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-bottom: 2rem;
+  letter-spacing: 0em;
+  color: #03015d;
+}
+.try-logo {
+  width: 15rem;
+  height: 3rem;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.try-logo2 {
+  width: 15rem;
+  height: 3rem;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.news-area {
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+.news-images {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+.news-text {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.news-text h2 {
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #03015d;
+  letter-spacing: 0em;
+}
+.news-text p {
+  font-family: Manrope;
+  font-size: 1rem;
+  font-weight: 500;
+
+  color: #6f6f6f;
+}
+.neews {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.news-image1 {
+  display: flex;
+  gap: 2rem;
+
+  background-color: #03015d0d;
+  padding: 1rem 1rem;
+  border-radius: 15px;
+}
+
+.news-image2 {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background-color: #03015d0d;
+  padding: 1rem 1rem;
+  border-radius: 15px;
+}
+.news-image3 {
+  background-color: #03015d0d;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  top: -1rem;
+  position: relative;
+}
+
+.download-area2 {
+  top: -6rem;
+  background-color: #03015d;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 20rem;
+  /* position: relative; */
+}
+.iphone-13 {
+  top: -12.8rem;
+  left: 4rem;
+  position: relative;
+  padding-bottom: 1rem;
+  /* z-index: -10; */
+}
+.iphone-13 img {
+  height: 39.5rem;
+}
+.iphone-text {
+  justify-content: center;
+  align-items: center;
+}
+.iphone-text h3 {
+  font-family: Manrope;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding-top: 3rem;
+}
+.iphone-text p {
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  letter-spacing: 0.0012em;
+  color: #f2f2f2;
+  padding-right: 15rem;
+  padding-bottom: 1rem;
+}
+.button-down {
+  gap: 2rem;
+  display: flex;
+}
+.button-down img {
+  width: 12rem;
+  object-fit: contain;
+}
+.app-stores {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  background-color: #fafafa;
+
+  margin-top: auto;
+}
+.footer-top {
+  display: flex;
+
+  padding: 6rem;
+  gap: 16rem;
+  /* align-items: left; */
+}
+.topsss {
+  display: flex;
+  gap: 7rem;
+}
+.footer-bottom {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  color: #00000080;
+  padding-left: 6rem;
+  padding-right: 11rem;
+}
+.footer-bottom h2 {
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.footer-bottom p {
+  font-family: Manrope;
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+.fff {
+  display: flex;
+  gap: 7rem;
+  margin-right: auto;
+}
+
+.about-first {
+  background-image: url(/images/Rectangle 9.png);
+  height: 20rem;
+  background-size: contain;
+  object-fit: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.about-first {
+  font-family: Product Sans;
+  font-size: 2.5rem;
+  padding: 6.5rem 5rem;
+  font-weight: 700;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+.about-check {
+  margin: 3rem 8rem 3rem 5rem;
+  display: flex;
+  gap: 7rem;
+}
+.about-mission {
+  gap: 5rem;
+}
+.about-side h2 {
+  font-family: Manrope;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #03015d;
+  letter-spacing: 0.0015em;
+  padding-bottom: 2rem;
+}
+.mission-1 h3 {
+  font-family: Manrope;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #03015d;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.mission-2 h3 {
+  font-family: Manrope;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #03015d;
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+}
+.mission-1 p {
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 0.8rem;
+  letter-spacing: 0.0016em;
+  color: #4d4d4d;
+}
+.mission-2 p {
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 0.8rem;
+  letter-spacing: 0.0016em;
+  color: #4d4d4d;
+}
+.cheekk {
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.0016em;
+  color: #4d4d4d;
+}
+.imaage {
+  background-color: #03015d0d;
+  padding: 0.5rem;
+}
+.about-image {
+  width: 160rem;
+  height: 30rem;
+  object-fit: contain;
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+}
+.about-check {
+  display: flex;
+}
+.whaat-about {
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+  padding-bottom: 5rem;
+}
+.whaat-about h2 {
+  font-family: Manrope;
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: 0.0015em;
+  color: #03015d;
+}
+.flex-about {
+  background-color: #03015d05;
+  width: 20rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+}
+.flex-about img {
+  padding-bottom: 2rem;
+}
+.flex-about h3 {
+  font-family: Manrope;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: #03015d;
+}
+.flex-about p {
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  letter-spacing: 0.0016em;
+}
+.top-how {
+  background-image: url(/images/Rectangle 93.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  height: 20rem;
+  /* top: 0; */
+  padding-top: 0.5rem;
+}
+.top-how h2 {
+  font-family: Product Sans;
+  font-size: 2.5rem;
+  padding: 5rem 5rem;
+  font-weight: 700;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+.how-image1 {
+  justify-items: center;
+  align-items: center;
+  width: 50rem;
+  height: 50rem;
+  margin-left: 11rem;
+  margin-top: -10rem;
+}
+.how-image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.how-image2 {
+  justify-content: center;
+  align-items: center;
+  margin-left: 4rem;
+}
+.contact-first {
+  background-image: url(/images/Rectangle 3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  height: 20rem;
+  /* top: 0; */
+  padding-top: 0.5rem;
+}
+.contact-top {
+  padding-bottom: 3rem;
+}
+.contact-first h2 {
+  font-family: Product Sans;
+  font-size: 2.5rem;
+  padding: 5rem 5rem;
+  font-weight: 700;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+.first-info h2 {
+  font-family: Manrope;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #03015d;
+  letter-spacing: 0.0015em;
+  padding-bottom: 2rem;
+}
+.contact-info {
+  display: flex;
+  gap: 20rem;
+  padding-left: 5rem;
+  padding-top: 3rem;
+}
+.contact-1 {
+  display: flex;
+  gap: 1.5rem;
+  /* justify-content: center; */
+  align-items: center;
+  /* text-align: center; */
+}
+.contact-1 p {
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #303030;
+  letter-spacing: 0.0016em;
+}
+.contact-2 {
+  width: 1rem;
+  height: 1rem;
+}
+.contact-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.about-mission {
+  display: flex;
+}
+.about-flex {
+  display: flex;
+  gap: 2rem;
+}
+.form {
+  display: block;
+}
+.form-area h2 {
+  font-family: Manrope;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #03015d;
+  letter-spacing: 0.0015em;
+  padding-bottom: 2rem;
+}
+.form-area h3 {
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  letter-spacing: 0em;
+  color: #303030;
+}
+.form--input {
+  width: 25rem;
+  height: 2rem;
+  border-radius: 16px;
+  background: none;
+  border: 1px solid #bdbdbd;
+  text-indent: 5px;
+  font-family: Manrope;
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  letter-spacing: 0em;
+  color: #303030;
+}
+.form--content {
+  width: 25rem;
+  height: 6rem;
+  border-radius: 16px;
+  background: none;
+  border: 1px solid;
+  justify-self: start;
+  text-indent: 5px;
+}
+.form--input:focus {
+  outline: none;
+  border: 2px solid #03015d;
+}
+.form--button {
+  margin-top: 1rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: #fafafa;
+  background-color: #03015d;
+  border: #03015d;
+  border-radius: 10px;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+.form--button:active {
+  color: #03015d;
+  background-color: #fafafa;
+  border: 1px solid #03015d;
+}
+.community-text {
+  padding-right: 12rem;
+}
+.community-text p {
+  font-family: Manrope;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+}
+.company-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
