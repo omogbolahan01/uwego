@@ -33,6 +33,12 @@ export default function Footer() {
                 How to uwego
               </NavLink>
               <NavLink
+                to="faqs"
+                style={({ isActive }) => (isActive ? activeStyles : null)}
+              >
+                FAQs
+              </NavLink>
+              <NavLink
                 to="contact"
                 style={({ isActive }) => (isActive ? activeStyles : null)}
               >
