@@ -108,44 +108,48 @@ export default function Home() {
           </p>
         </div>
         <div className="how-flex">
-          <div className="flex-how">
-            <img src="/images/Saly-12.png" />
-            <p>Step 1</p>
-            <h4>Download App </h4>
-            <p>
-              Lorem sit ametelit. Dictumst consectetur quisque lorem congue non
-              pellentesque ut.
-            </p>
+          <div className="fflex1">
+            <div className="flex-how">
+              <img src="/images/Saly-12.png" />
+              <p>Step 1</p>
+              <h4>Download App </h4>
+              <p className="how-para">
+                Lorem sit ametelit. Dictumst consectetur quisque lorem congue
+                non pellentesque ut.
+              </p>
+            </div>
+            <img src="/images/Group 12.png" className="how-arrow" />
+            <div className="flex-how">
+              <img src="/images/Saly-6.png" />
+              <p>Step 2</p>
+              <h4>Search </h4>
+              <p className="how-para">
+                Lorem sit ametelit. Dictumst consectetur quisque lorem congue
+                non pellentesque ut.
+              </p>
+            </div>
+            <img src="/images/Group 12.png" className="how-arrow2" />
           </div>
-          <img src="/images/Group 12.png" className="how-arrow" />
-          <div className="flex-how">
-            <img src="/images/Saly-6.png" />
-            <p>Step 2</p>
-            <h4>Search </h4>
-            <p>
-              Lorem sit ametelit. Dictumst consectetur quisque lorem congue non
-              pellentesque ut.
-            </p>
-          </div>
-          <img src="/images/Group 12.png" className="how-arrow" />
-          <div className="flex-how">
-            <img src="/images/Saly-3.png" />
-            <p>Step 3</p>
-            <h4>Select your route </h4>
-            <p>
-              Lorem sit ametelit. Dictumst consectetur quisque lorem congue non
-              pellentesque ut.
-            </p>
-          </div>
-          <img src="/images/Group 12.png" className="how-arrow" />
-          <div className="flex-how">
-            <img src="/images/Saly-22.png" />
-            <p>Step 4</p>
-            <h4>Start your trip </h4>
-            <p>
-              Lorem sit ametelit. Dictumst consectetur quisque lorem congue non
-              pellentesque ut.
-            </p>
+          <div className="fflex2">
+            <div className="flex-how">
+              <img src="/images/Saly-3.png" />
+              <p>Step 3</p>
+              <h4>Select your route </h4>
+              <p className="how-para ">
+                Lorem sit ametelit. Dictumst consectetur quisque lorem congue
+                non pellentesque ut.
+              </p>
+            </div>
+            <img src="/images/Group 12.png" className="how-arrow" />
+            <div className="flex-how">
+              <img src="/images/Saly-22.png" />
+              <p>Step 4</p>
+              <h4>Start your trip </h4>
+              <p className="how-para">
+                Lorem sit ametelit. Dictumst consectetur quisque lorem congue
+                non pellentesque ut.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -167,6 +171,7 @@ export default function Home() {
           <div className="try-logo2">
             <h3>Logo Partner</h3>
           </div>
+
           <div className="try-logo">
             <h3>Logo Partner</h3>
           </div>
@@ -198,7 +203,7 @@ export default function Home() {
           <div className="neews">
             <div className="news-image1">
               <div>
-                <img src="/images/Rectangle 102.png" />
+                <img src="/images/Rectangle 102.png" className="red" />
               </div>
               <div>
                 <h2>News</h2>
@@ -208,7 +213,7 @@ export default function Home() {
             </div>
             <div className="news-image2">
               <div>
-                <img src="/images/Rectangle 103.png" />
+                <img src="/images/Rectangle 103.png" className="red" />
               </div>
               <div>
                 <h2>News</h2>
@@ -220,7 +225,7 @@ export default function Home() {
 
           <div className="news-image3">
             <div>
-              <img src="/images/Rectangle 104.png" />
+              <img src="/images/Rectangle 104.png" className="reddd" />
             </div>
             <div>
               <h2>News</h2>

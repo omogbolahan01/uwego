@@ -6,7 +6,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  /* font-family: "Inter", sans-serif; */
 }
 
 a {
@@ -62,7 +63,8 @@ header .home-logo {
 header .home-line {
   height: 2rem;
   width: 0.2rem;
-  margin-right: auto;
+  margin-right: 40rem;
+  /* margin-right: auto; */
 }
 
 nav {
@@ -254,6 +256,13 @@ nav {
   /* top: 8rem;
   position: relative; */
 }
+.how-arrow2 {
+  width: 4rem;
+  height: 2rem;
+  object-fit: contain;
+  /* top: 8rem;
+  position: relative; */
+}
 .slider-text {
   justify-content: center;
   align-items: center;
@@ -294,6 +303,21 @@ nav {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.logo1 {
+  display: flex;
+  width: 15rem;
+  height: 3rem;
+
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.logo2 {
+  display: flex;
+  width: 15rem;
+  height: 3rem;
+  background-color: #f9f9f9;
+  cursor: pointer;
 }
 .logo-class12 h3 {
   font-family: Manrope;
@@ -378,7 +402,6 @@ nav {
 .news-image1 {
   display: flex;
   gap: 2rem;
-
   background-color: #03015d0d;
   padding: 1rem 1rem;
   border-radius: 15px;
@@ -495,7 +518,7 @@ footer {
 .about-first {
   background-image: url(/images/Rectangle9.png);
   height: 20rem;
-  background-size: contain;
+  background-size: cover;
   object-fit: contain;
   width: 100%;
   background-repeat: no-repeat;
@@ -581,11 +604,17 @@ footer {
 .about-check {
   display: flex;
 }
+.about-flex {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+}
 .whaat-about {
   justify-content: center;
   align-items: center;
-  margin-left: 5rem;
-  padding-bottom: 5rem;
+  text-align: center;
+  /* margin-left: 5rem;
+  padding-bottom: 5rem; */
 }
 .whaat-about h2 {
   font-family: Manrope;
@@ -625,7 +654,7 @@ footer {
   background-image: url(/images/Rectangle93.png);
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: black; */
+
   height: 20rem;
   /* top: 0; */
   padding-top: 0.5rem;
@@ -665,6 +694,16 @@ footer {
   height: 20rem;
   /* top: 0; */
   padding-top: 0.5rem;
+}
+.fflex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fflex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact-top {
   padding-bottom: 3rem;
@@ -892,4 +931,561 @@ footer {
 }
 .price {
   margin-top: 2rem;
+}
+/* NavigationBar.css */
+.nav {
+  /* background-color: #333; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: black;
+  width: 30px;
+  height: 3px;
+  margin: 4px 0;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items li {
+  margin: 0 15px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  /* color: white; */
+}
+
+@media screen and (max-width: 600px) {
+  header .home-line {
+    margin-right: 30rem;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 75%;
+  }
+
+  .nav-items.open {
+    display: flex;
+  }
+
+  .nav-items li {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+  }
+  header .home-line {
+    margin-right: 25rem;
+  }
+  .home-pagecontainer {
+    /* display: flex; */
+  }
+  .hero--image {
+    width: 100%;
+    height: 100%;
+  }
+  .hero-area {
+    padding-left: 3rem;
+  }
+  .area-1 h2 {
+    font-size: 3rem;
+  }
+  .area-1 p {
+    font-size: 0.8rem;
+
+    letter-spacing: 0.0012em;
+    padding-right: 10rem;
+    color: #cacaca;
+  }
+  .app-store {
+    width: 10rem;
+    height: 10rem;
+  }
+  .app-store img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .download-line {
+    height: 3rem;
+    position: relative;
+    top: -3.7rem;
+  }
+  .what-text p {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .what-flex {
+    padding: 0 2rem;
+  }
+  .flex-obj p {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+  }
+  .why-text p {
+    font-size: 1rem;
+
+    padding: 1rem 10rem;
+  }
+  .why-flex {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .how-text p {
+    font-size: 0.8rem;
+  }
+  .how-flex {
+    padding-top: 3rem;
+    padding-right: 3rem;
+  }
+  .how-para {
+    font-size: 0.5rem;
+  }
+  .logo-class1 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .logo-class12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .news-area {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .red {
+    width: 7rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .red img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .news-image3 {
+    background-color: #03015d0d;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    top: -1rem;
+    position: relative;
+  }
+  .reddd {
+    height: 15rem;
+  }
+  .reddd img {
+    height: 100%;
+    object-fit: contain;
+  }
+  .download-area2 {
+    grid-template-columns: 50% 50%;
+  }
+  .footer-top {
+    gap: 3rem;
+    padding: 6rem;
+  }
+  .community-text {
+    padding-right: 3rem;
+  }
+  .about-side h2 {
+    font-size: 1.3rem;
+  }
+  .about-check {
+    margin: 3rem 5rem 3rem 5rem;
+    display: flex;
+    gap: 4rem;
+  }
+  .about-mission {
+    gap: 2.5rem;
+  }
+  .mission-1 h3 {
+    font-size: 1.1rem;
+  }
+  .mission-2 h3 {
+    font-size: 1.1rem;
+  }
+  .mission-1 p {
+    font-size: 0.8rem;
+  }
+  .mission-2 p {
+    font-size: 0.8rem;
+    /* line-height: 0.6rem; */
+  }
+  .cheekk {
+    font-size: 0.7rem;
+
+    line-height: 0.8rem;
+  }
+  .download-line {
+    top: -1rem;
+  }
+  .how-image1 {
+    width: 60rem;
+    height: 60rem;
+    margin-left: 9rem;
+    margin-top: -5rem;
+  }
+  .how-image2 {
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 50rem;
+  }
+  .how-image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .form {
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .home-line {
+    margin-right: 10rem;
+  }
+  .area-1 p {
+    padding-right: 5rem;
+  }
+  .app-store {
+    width: 5rem;
+    height: 5rem;
+  }
+  .how-flex {
+    display: block;
+  }
+  .how-arrow2 {
+    display: none;
+  }
+  .flex-how p {
+    font-size: 0.8rem;
+  }
+  .news-images {
+    display: block;
+    gap: 1rem;
+  }
+  .neews {
+    display: flex;
+    flex-direction: row;
+  }
+  .news-image1 {
+    margin-bottom: 2rem;
+  }
+  .news-image3 {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .download-area2 {
+    top: -4rem;
+
+    grid-template-columns: 40% 60%;
+
+    height: 20rem;
+  }
+  .iphone-text {
+    position: relative;
+    left: 5rem;
+    padding-right: 2rem;
+  }
+  .iphone-13 {
+    top: -12.8rem;
+    left: 2rem;
+  }
+  .iphone-13 img {
+    height: 35rem;
+  }
+  .iphone-text p {
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+  }
+  .button-down {
+    gap: 2rem;
+  }
+  .button-down img {
+    width: 10rem;
+    object-fit: contain;
+  }
+  .footer-top {
+    gap: 1.5rem;
+    padding: 3rem;
+  }
+  .about-check {
+    margin: 2rem 5rem 2rem 5rem;
+
+    gap: 2rem;
+  }
+  .about-mission {
+    gap: 1.5rem;
+  }
+  .mission-1 p {
+    font-size: 0.75rem;
+  }
+  .mission-2 p {
+    font-size: 0.75rem;
+    /* line-height: 0.6rem; */
+  }
+  .whaat-about {
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    padding: 2rem;
+  }
+  .howw-place {
+    justify-content: center;
+    align-items: center;
+  }
+  .how-image1 {
+    /* justify-items: center;
+    align-items: center; */
+    width: 35rem;
+    height: 50rem;
+    /* margin-left: 11rem;
+    margin-top: -10rem; */
+  }
+  .how-image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .how-image2 {
+    /* margin-left: 2rem; */
+    width: 40rem;
+    margin-bottom: 0%;
+  }
+  .how-image2 img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .contact-info {
+    gap: 5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .home-pagecontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero--image {
+    display: none;
+  }
+  .what-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .why-text p {
+    padding: 1rem 2rem;
+  }
+  .why-flex {
+    flex-direction: column;
+  }
+  .how-flex {
+    flex-direction: column;
+
+    padding: 1rem 5rem;
+  }
+  .fflex1 {
+    flex-direction: column;
+  }
+  .fflex2 {
+    flex-direction: column;
+  }
+  .how-arrow2 {
+    display: flex;
+  }
+  .logo-class1 {
+    flex-direction: column;
+  }
+  .logo-class12 {
+    display: none;
+  }
+  .download-area2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .iphone-13 {
+    display: none;
+  }
+
+  .iphone-text h3 {
+    font-size: 1rem;
+  }
+  .iphone-text p {
+    font-size: 0.7rem;
+  }
+  .button-down {
+    gap: 1rem;
+  }
+  .button-down img {
+    width: 6.5rem;
+    object-fit: contain;
+  }
+  .app-stores {
+    width: 3rem;
+  }
+  .app-stores img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .topsss {
+    gap: 4rem;
+  }
+  .footer-bottom {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  .footer-bottom h2 {
+    font-size: 0.5rem;
+  }
+  .footer-bottom p {
+    font-size: 0.5rem;
+  }
+  .fff {
+    display: flex;
+    gap: 2rem;
+    margin-right: auto;
+  }
+  .news-image3 {
+    display: none;
+  }
+  .neews {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-first {
+    font-family: Product Sans;
+    font-size: 2.5rem;
+    padding: 6.5rem 2rem;
+  }
+  .about-image {
+    display: none;
+  }
+  .about-check {
+    margin: 1rem 4rem 1rem 2.5rem;
+    gap: 2rem;
+  }
+  .about-mission {
+    gap: 2rem;
+  }
+  .about-side h2 {
+    font-size: 1.2rem;
+  }
+  .mission-1 h3 {
+    font-size: 0.8rem;
+  }
+  .mission-2 h3 {
+    font-size: 0.8rem;
+  }
+  .mission-1 p {
+    font-size: 0.65rem;
+  }
+  .mission-2 p {
+    font-size: 0.65rem;
+  }
+  .about-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 3rem 1rem 1rem;
+  }
+  .flex-about {
+    width: 18rem;
+  }
+  .top-how h2 {
+    padding: 4rem 2.5rem;
+  }
+  .how-image1 {
+    width: 20rem;
+    height: 30rem;
+    margin-left: 3rem;
+    margin-top: -10rem;
+  }
+  .how-image2 {
+    width: 20rem;
+    margin-left: 1.5rem;
+  }
+  .contact-first h2 {
+    padding: 5rem 2.5rem;
+  }
+  .contact-info {
+    flex-direction: column;
+    padding: 5rem 2.5rem;
+  }
+  .form--input {
+    width: 15rem;
+  }
+  .faq-background h2 {
+    padding: 5rem 2.5rem;
+  }
+  .faq-pad {
+    padding: 3rem 2.5rem;
+  }
+  .faq-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .home-line {
+    margin-right: 20rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .home-line {
+    margin-right: 13rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  header .home-line {
+    margin-right: 11.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .home-line {
+    margin-right: 10rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .home-logo {
+    width: 25px;
+  }
+  .home-logo img {
+    width: 100%;
+  }
+  header .home-line {
+    margin-right: 5rem;
+  }
 }

@@ -42,3 +42,22 @@ body {
   height: 100%;
   object-fit: cover;
 }
+@media screen and (max-width: 700px) {
+  .swiper {
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide {
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    width: 50rem;
+    height: 10rem;
+    object-fit: contain;
+  }
+}

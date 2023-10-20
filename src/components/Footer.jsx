@@ -76,5 +76,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-  //   return <footer>&#169; 2022 #VANLIFE</footer>;
 }
