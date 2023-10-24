@@ -8,7 +8,9 @@ export default function Header() {
     color: "#161616",
   };
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -31,30 +33,35 @@ export default function Header() {
           <NavLink
             to="."
             style={({ isActive }) => (isActive ? activeStyles : null)}
+            onClick={closeMenu}
           >
             Home
           </NavLink>
           <NavLink
             to="about"
             style={({ isActive }) => (isActive ? activeStyles : null)}
+            onClick={closeMenu}
           >
             About Us
           </NavLink>
           <NavLink
             to="how"
             style={({ isActive }) => (isActive ? activeStyles : null)}
+            onClick={closeMenu}
           >
             How to uwego
           </NavLink>
           <NavLink
             to="contact"
             style={({ isActive }) => (isActive ? activeStyles : null)}
+            onClick={closeMenu}
           >
             Contact Us
           </NavLink>
           <NavLink
             to="faqs"
             style={({ isActive }) => (isActive ? activeStyles : null)}
+            onClick={closeMenu}
           >
             FAQs
           </NavLink>
